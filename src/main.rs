@@ -29,6 +29,11 @@ fn main() {
             break;
         }
     }
+
+    println!("Press Enter to exit");
+    let mut temp = String::new();
+    io::stdin().read_line(&mut temp)
+            .expect("Error reading input.");    
 }
 
 /**
